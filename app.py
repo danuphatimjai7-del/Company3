@@ -991,8 +991,7 @@ def add_cors(r):
     r.headers["Access-Control-Allow-Headers"] = "Content-Type"
     return r
 
-@app.route("/api/<path:p>", methods=["OPTIONS"])
-def options_handler(p): return "", 204
+
 
 # ══════════════════════════════════════════
 #  AUTH ROUTES
